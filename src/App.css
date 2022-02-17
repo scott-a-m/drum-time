@@ -1,0 +1,63 @@
+body {
+  background: hsl(0, 0%, 15%) !important;
+}
+
+#display {
+  font-size: 1.6rem;
+  color: black;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#Drum-Time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#drum-machine {
+  position: relative;
+  text-align: center;
+  max-width: 500px;
+  min-width: 500px;
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+#machine-name {
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  text-shadow: 0 1px 2px red;
+  margin-top: 1rem;
+}
+
+#link, #designer {
+  color: white;
+  font-family: 'Long Cang', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+a {color: white;}
+
+a:hover, #link:hover {
+  color: red;
+}
+
+
+/* media queries for smaller screens */
+
+@media (max-width: 550px) {
+  #Drum-Time {
+    transform: scale(0.7);
+  }
+}
+
+
+@media (max-width: 355px) {
+  #Drum-Time {
+    transform: scale(0.6);
+  }
+}
