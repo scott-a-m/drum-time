@@ -16,6 +16,7 @@ body {
 }
 
 #drum-machine {
+  margin: 0 auto;
   position: relative;
   text-align: center;
   max-width: 500px;
@@ -36,7 +37,7 @@ body {
 #link, #designer {
   color: white;
   font-family: 'Long Cang', cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -47,12 +48,41 @@ a:hover, #link:hover {
 }
 
 
+#contact-block {
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
+  margin-top: 0;
+}
+
+.contact-icon {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.contact-icon:hover {
+  color: red;
+  background: white;
+  cursor: pointer;
+}
+
+
 /* media queries for smaller screens */
 
 @media (max-width: 550px) {
   #Drum-Time {
     transform: scale(0.7);
   }
+
+  #display {
+    font-size: 1.8rem;
+  }
+
+  #designer {
+    font-size: 2.5rem;
+  }
+
+
+
 }
 
 

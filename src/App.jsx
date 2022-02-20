@@ -1,5 +1,12 @@
 import React from "react";
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFreeCodeCamp,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 // create array of sound objects and properties to be later passed down to buttons and keys
 
@@ -197,7 +204,7 @@ class App extends React.Component {
     return (
       <div>
         <div id="drum-machine" className="row">
-          <h1 id="machine-name">Drum Time!</h1>
+          <h1 id="machine-name">Drum Time</h1>
           <p id="display">
             <strong>
               <u>Beat:</u>{" "}
@@ -206,19 +213,46 @@ class App extends React.Component {
           </p>
           {individualDrums}
         </div>
-        <p id="designer">
-          Designed and programmed by:{" "}
-          <a href="https://github.com/scott-a-m" target="_blank" id="link">
-            scott-a-m
+        <div>
+        <p style={{ fontFamily: "Verdana", fontSize: "0.8rem", color: "white", textAlign: "center" }}>
+          Drum sounds from{" "}
+          <a href="https://www.fesliyanstudios.com/" target="_blank">
+            Fesliyan Studios
           </a>
-          <br />
-          <span style={{ fontFamily: "Verdana", fontSize: "0.8rem" }}>
-            Drum sounds from{" "}
-            <a href="https://www.fesliyanstudios.com/" target="_blank">
-              Fesliyan Studios
-            </a>
-          </span>
+          .
         </p>
+        <p id="designer">developed by Scott Mitchell</p>
+        </div>
+        <div id="contact-block">
+          <a href="https://github.com/scott-a-m" target="_blank">
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2x"
+              border
+              className="contact-icon"
+            />
+          </a>
+          <a
+            href="https://twitter.com/_scott_a_m"
+            target="_blank"
+            rel="noreferrrer"
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              size="2x"
+              border
+              className="contact-icon"
+            />
+          </a>
+          <a href="https://www.freecodecamp.org/scott-a-m" target="_blank">
+            <FontAwesomeIcon
+              icon={faFreeCodeCamp}
+              size="2x"
+              border
+              className="contact-icon"
+            />
+          </a>
+        </div>
       </div>
     );
   }
