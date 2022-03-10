@@ -35,19 +35,18 @@ body {
   margin-top: 1rem;
 }
 
-#link, #designer {
-  color: white;
-  font-family: 'Long Cang', cursive;
-  font-size: 2rem;
-  text-align: center;
-}
-
 a {color: white;}
 
 a:hover, #link:hover {
   color: red;
 }
 
+#link, #designer {
+  color: white;
+  font-family: 'Long Cang', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
 
 #contact-block {
   font-family: 'Akaya Telivigala', cursive;
