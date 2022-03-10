@@ -214,14 +214,21 @@ class App extends React.Component {
           {individualDrums}
         </div>
         <div>
-        <p style={{ fontFamily: "Verdana", fontSize: "0.8rem", color: "white", textAlign: "center" }}>
-          Drum sounds from{" "}
-          <a href="https://www.fesliyanstudios.com/" target="_blank">
-            Fesliyan Studios
-          </a>
-          .
-        </p>
-        <p id="designer">developed by Scott Mitchell</p>
+          <p
+            style={{
+              fontFamily: "Verdana",
+              fontSize: "0.8rem",
+              color: "white",
+              textAlign: "center",
+            }}
+          >
+            Drum sounds from{" "}
+            <a href="https://www.fesliyanstudios.com/" target="_blank">
+              Fesliyan Studios
+            </a>
+            .
+          </p>
+          <p id="designer">developed by Scott Mitchell</p>
         </div>
         <div id="contact-block">
           <a href="https://github.com/scott-a-m" target="_blank">
@@ -247,6 +254,14 @@ class App extends React.Component {
           <a href="https://www.freecodecamp.org/scott-a-m" target="_blank">
             <FontAwesomeIcon
               icon={faFreeCodeCamp}
+              size="2x"
+              border
+              className="contact-icon"
+            />
+          </a>
+          <a href="mailto:scott_a_mitchell@163.com">
+            <FontAwesomeIcon
+              icon={faEnvelope}
               size="2x"
               border
               className="contact-icon"
