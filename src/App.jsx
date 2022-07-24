@@ -228,7 +228,12 @@ class App extends React.Component {
             </a>
             .
           </p>
-          <p id="designer">developed by Scott Mitchell</p>
+          <p id="designer">
+            developed by{" "}
+            <a href="https://scottsdev.net" target="_blank" rel="noreferrer">
+              Scott Mitchell
+            </a>
+          </p>
         </div>
         <div id="contact-block">
           <a href="https://github.com/scott-a-m" target="_blank">
@@ -259,7 +264,7 @@ class App extends React.Component {
               className="contact-icon"
             />
           </a>
-          <a href="mailto:scott_a_mitchell@163.com">
+          <a href="mailto:scott@scottsdev.com">
             <FontAwesomeIcon
               icon={faEnvelope}
               size="2x"
